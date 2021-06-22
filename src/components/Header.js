@@ -27,7 +27,7 @@ const typingStyles = makeStyles(theme => ({
     },
     typedContainer: {
         position: 'absolute',
-        top: '50%', //this was 50% on the tutorial 
+        top: '20%', //this was 50% on the tutorial. This changes the elevation of the box. 
         left: '50%',
         transform:'translate(-50%, 50%)',
         width: '100vw',
