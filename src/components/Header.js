@@ -6,6 +6,7 @@ import {
     Box
 } from '@material-ui/core';
 import avatar from '../avatar.png'
+import PFP from '../PFP.png'
 import Typed from 'react-typed'
 import { makeStyles } from '@material-ui/core/styles';
 import { textAlign } from '@material-ui/system';
@@ -19,10 +20,10 @@ const typingStyles = makeStyles(theme => ({
     },
     
     title:{
-        color: 'violet'
+        color: 'white'
     },
     subtitle:{
-        color: 'red',
+        color: 'tomato',
         marginBottom:'3rem'
     },
     typedContainer: {
@@ -42,7 +43,7 @@ const Header = () => {
     return (
         <Box className={classes.typedContainer}>
             <Grid container justify='center'>
-                <Avatar src={avatar} alt='Mohammad Islam' className={classes.avatar}/>
+                <Avatar src={PFP} alt='Mohammad Islam' className={classes.avatar}/>
             </Grid>
             <Typography variant='h4' className={classes.title}>
                 <Typed strings={['Mohammad Islam']} typeSpeed={40}/>
