@@ -23,12 +23,12 @@ const typingStyles = makeStyles(theme => ({
         color: 'white'
     },
     subtitle:{
-        color: 'tomato',
+        color: 'tan',
         marginBottom:'3rem'
     },
     typedContainer: {
         position: 'absolute',
-        top: '20%', //this was 50% on the tutorial. This changes the elevation of the box. 
+        top: '15%', //this was 50% on the tutorial. This changes the elevation of the box. 
         left: '50%',
         transform:'translate(-50%, 50%)',
         width: '100vw',

@@ -24,6 +24,7 @@ import avatar from '../avatar.png'
 import PFP from '../PFP.png'
 import { makeStyles } from '@material-ui/core/styles';
 import MobileRightMenuSlider from '@material-ui/core/Drawer'
+import { Link } from 'react-router-dom'
 
 // CSS Styling
 const myStyles = makeStyles( theme => ({
@@ -46,11 +47,13 @@ const myStyles = makeStyles( theme => ({
 const menuItems = [
     {
         listIcon: <Home />,
-        listText: "Home"
+        listText: "Home",
+        listPath: '/'
     },
     {
         listIcon: <AssignmentInd />,
-        listText: "Resume"
+        listText: "Resume",
+        listPath: '/resume'
     },
     {
         listIcon: <Apps />,
@@ -77,7 +80,7 @@ const Navbar = () => {
         <Divider />
         <List>
             {menuItems.map((listItem, key) => (
-            <ListItem button key={key}>
+            <ListItem button key={key} component={Link} to={listItem.listPath}>
                 <ListItemIcon className={classes.listItem}>
                     {listItem.listIcon}
                 </ListItemIcon>

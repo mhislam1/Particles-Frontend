@@ -4,6 +4,7 @@ import Navbar from './Navbar.js';
 import Particles from 'react-particles-js';
 import {makeStyles} from '@material-ui/styles'
 
+
 const particleStyles = makeStyles({
     particlesCanva: {
         position: 'absolute'
